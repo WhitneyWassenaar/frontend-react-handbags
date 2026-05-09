@@ -1,20 +1,18 @@
 import './App.css'
-import logMenuButtonText from "./assets/Helpers/logMenuButtonText.js";
+import Button from "./assets/components/Button.jsx";
 
 function App() {
     return (
         <>
             <h1>Handbags & Purses</h1>
             <nav>
-                <button type="button" onClick={() => logMenuButtonText("to the collection")}>to the collection</button>
-                <button type="button" onClick={() => logMenuButtonText("shop all bags")}>shop all bags</button>
-                <button type="button" onClick={() => logMenuButtonText("pre-orders")} disabled>pre-orders</button>
+                <Button text="to the collection" disabled={false}/>
+                <Button text="shop all bags" disabled={false}/>
+                <Button text="pre-orders" disabled={true}/>
             </nav>
         </>
     )
 }
 
-export default App
+export default App;
 
-// props: alleen in React components, niet in helpers
-// parameters: overal in JavaScript
