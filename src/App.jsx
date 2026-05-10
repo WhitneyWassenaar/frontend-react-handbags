@@ -9,8 +9,9 @@ import imgTrendyBag from "./assets/bag_4.png";
 function App() {
     return (
         <>
-            <h1>Handbags & Purses</h1>
-
+            <header>
+                <h1>Handbags & Purses</h1>
+            </header>
             <nav>
                 <Button
                     text="to the collection"
