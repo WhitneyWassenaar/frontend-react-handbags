@@ -1,4 +1,6 @@
 import './App.css'
+import ProductArticle from "./assets/components/products.jsx";
+import imgBag from "./assets/bag_1.png";
 
 function App() {
   return (
@@ -6,44 +8,9 @@ function App() {
         <h1>Handbags & Purses</h1>
 
         <main>
-          <article>
-            <span>
-              <img src="" alt="image"/>
-              <p></p>
-              <h4></h4>
-            </span>
-          </article>
-
-          <article>
-            <span>
-              <img src="" alt="imag"/>
-              <p></p>
-              <h4></h4>
-            </span>
-          </article>
-
-          <article>
-            <span>
-              <img src="" alt="image"/>
-              <p></p>
-              <h4></h4>
-            </span>
-          </article>
-
-          <article>
-            <span>
-              <img src="" alt="image"/>
-              <p></p>
-              <h4></h4>
-            </span>
-          </article>
-
+            <ProductArticle img={imgBag} labelText={"Best Seller"} alternativeText={"img"} text={"The handy bag"} price={"€400,-"}/>
         </main>
   </>
-
-
-
-
   )
 }
 
